@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="custome_testSuite" thread-count="2"
+	parallel="methods">
+	<packages>
+		<package name="testClass"></package>
+	</packages>
+	<test name="Regression Test" enabled="true">
+		<groups>
+			<run>
+				<include name="regressionTest"></include>
+			</run>
+		</groups>
+	</test>
+</suite>

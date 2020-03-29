@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="custome_testSuite" thread-count="2" parallel="methods">
+	<test name="Regression Test" enabled="false">
+		<packages>
+			<package name="testClass"></package>
+		</packages>
+	</test>
+	<test name="Firefox Test">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+			<class name="testClass.ShoppingCartPage"></class>
+		</classes>
+	</test>
+	<test name="Chrome Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="testClass.ShoppingCartPage"></class>
+		</classes>
+	</test>
+</suite>

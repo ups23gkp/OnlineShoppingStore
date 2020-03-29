@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="methods" name="Failed suite [custome_testSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="methods" name="Firefox Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testClass.ShoppingCartPage">
+        <methods>
+          <include name="purchaseAProduct"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testClass.ShoppingCartPage -->
+    </classes>
+  </test> <!-- Firefox Test(failed) -->
+  <test thread-count="2" parallel="methods" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="testClass.ShoppingCartPage">
+        <methods>
+          <include name="purchaseAProduct"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testClass.ShoppingCartPage -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [custome_testSuite] -->
