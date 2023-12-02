@@ -9,7 +9,7 @@ import java.awt.event.KeyEvent;
 public class FileUploadCapabilities {
 	
 	public static void fileUploadFromFileExlorer() throws Exception {
-		StringSelection ss = new StringSelection("C:\\Users\\udangng.WIPRO\\Desktop\\uploadText.txt");
+		StringSelection ss = new StringSelection("C:\\Users\\uh.O\\Desktop\\uploadText.txt");
 		Thread.sleep(4000);
 		//To copy the file from file explorer
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
